@@ -3,4 +3,165 @@
   margin: 0;
   border: none;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  width: 90%;
+  max-width: 634px;
+}
+
+.head {
+  padding-top: 41px;
+  padding-bottom: 41px;
+  padding-left: 41px;
+  padding-right: 41px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.09);
+}
+
+.head__title {
+  margin-bottom: 24px;
+  color: #4abebd;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.head__subtitle {
+  margin-bottom: 12px;
+  color: #b1d21d;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.head__description-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  color: #adadad;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+}
+
+.register {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signature {
+  width: 50%;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  padding-right: 42px;
+  padding-left: 42px;
+  border-radius: 0px 0px 0px 10px;
+  background: #2bb3b1;
+}
+
+.signature__title {
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.signature__value {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.signature__value-detail {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.signature__description {
+  margin-top: 24px;
+  margin-bottom: 28px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.signature__button-detail {
+  width: 233px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 5px;
+  background: #bfdf32;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  color: #516300;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+}
+
+.benefits {
+  width: 50%;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  padding-right: 42px;
+  padding-left: 42px;
+  border-radius: 0px 0px 10px 0px;
+  background: #4abebd;
+}
+
+.benefits__title {
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+.benefits__title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.benefits__title-detail {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+@media only screen and (max-width: 900px) {
+  .register {
+    flex-direction: column;
+  }
+  .signature {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .signature__value {
+    display: flex;
+    gap: 10px;
+  }
+
+  .benefits {
+    width: 100%;
+    border-radius: 0px;
+  }
 }
