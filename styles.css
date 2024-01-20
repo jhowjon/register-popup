@@ -12,6 +12,8 @@ body {
 }
 
 .wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100vw;
   min-height: 100vh;
   display: flex;
